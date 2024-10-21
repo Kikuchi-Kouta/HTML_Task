@@ -1,4 +1,4 @@
-body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+body, div, p, ul, li, img, h2 {
     margin: 0;
     padding: 0;
 }
