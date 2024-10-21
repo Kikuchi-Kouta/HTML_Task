@@ -1,0 +1,245 @@
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: grid;
+}
+
+.HeaderContainer {
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+   justify-content: space-between;
+   position: relative;
+   margin: 0 36px 0 36px;
+}
+
+.header-logo {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+.header-mini {
+    display: none;
+}
+
+.HumburgerMenu {
+    display: none;
+}
+
+.HeaderList {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.ListItem {
+    margin-right: 45px;
+    
+}
+
+.ItemLink {
+    display: block;
+    text-decoration: none;
+}
+
+.ListItem span {
+    display: block;
+    color: black;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ItemLink:hover {
+    opacity: 0.7;
+}
+
+.ItemButton {
+    align-items: center;
+    background-color: #F29214;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 20px;
+}
+.ItemButton:hover {
+    opacity: 0.7;
+}
+
+main {
+    display: block;
+}
+
+.MainView {
+    position: relative;
+    height: 740px;
+}
+
+.big-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.left-rectangle {
+    top: -70px;
+    left: 0;
+}
+
+.right-rectangle {
+    bottom: 70px;
+    right: 0;
+}
+
+.fill-rectangle {
+    top: 84px;
+    left: -70px;
+}
+
+.PhotoImage {
+    top: -70px;
+    right: 0;
+    width: 775px;
+}
+
+.other-image {
+    display: none;
+}
+
+.MainContainer {
+    max-width: 1040px;
+    padding-top: 200px; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.MainContent {
+    position: relative;
+    width: fit-content;
+}
+
+.MainContent h2 {
+    color: black;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 65px;
+    margin-bottom: 16px;
+}
+
+.icon-image {
+    position: absolute;
+    top: -105px;
+    right: -150px;
+}
+
+.ContactButton {
+    align-items: center;
+    background-color: #F29214;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 70px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ContactButton:hover {
+    opacity: 0.7;
+}
+
+
+.ContactAnnotation {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .HumburgerMenu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        height: 20px;
+        width: 25px;
+        margin: auto;
+    }
+    .HumburgerLine {
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background-color: #A2A2A4;
+        top: 10px;
+    }
+    .HumburgerLine:first-child {
+        top: 0;
+    }
+    .HumburgerLine:last-child {
+        top: 20px;
+    }
+    .HeaderList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-logo {
+        display: none;
+    }
+    .header-mini {
+        display: block;
+        height: 12px;
+        width: auto;
+    }
+    .MainView {
+        height: fit-content;
+    }
+    .big-image {
+        display: none;
+    }
+    .other-image {
+        display: block;
+        width: 100%;
+    }
+    .MainContainer {
+        max-width: none;
+        padding-top: 0;
+    }
+    .MainContent h2 {
+        font-size: 20px;
+        position: relative;
+        width: fit-content;
+        line-height: 40px;
+    }
+    .icon-image {
+        width: 100px;
+        height: 100px;
+        top: -20px;
+        right: -85px;
+    }
+}
